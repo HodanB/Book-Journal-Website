@@ -97,6 +97,7 @@ public class BookControllerIntegrationTest {
 				.andExpect(content().json(this.mapper.writeValueAsString(updated)));
 	}
 
+
 	@Test
 	void testDelete() throws Exception {
 		this.mvc.perform(delete("/removeBook/1")).andExpect(status().isNoContent());

@@ -10,9 +10,9 @@ public interface BookService {
 
 	List<Book> getAll();
 	
-	Book findByTitle(String title);
+	List<Book> findByTitle(String title);
 	
-	Book findByAuthor(String author);
+	List<Book> findByAuthor(String author);
 
 	Book create(Book book);
 

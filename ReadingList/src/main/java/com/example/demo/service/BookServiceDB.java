@@ -58,13 +58,13 @@ public class BookServiceDB implements BookService {
 	}
 
 	@Override
-	public Book findByTitle(String title) {
+	public List<Book> findByTitle(String title) {
 		
 		return this.repo.findByTitleStartingWithIgnoreCase(title);
 	}
 
 	@Override
-	public Book findByAuthor(String author) {
+	public List<Book> findByAuthor(String author) {
 		// TODO Auto-generated method stub
 		return this.repo.findByAuthorStartingWithIgnoreCase(author);
 	}

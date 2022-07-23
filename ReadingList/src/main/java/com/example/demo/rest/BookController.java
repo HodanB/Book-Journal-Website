@@ -39,14 +39,15 @@ public class BookController {
 		}
 //		to find a book from the reading list using TITLE
 		@GetMapping("/getBookByTitle/{title}")
-		public Book getByTitle(@PathVariable String title) {
+		public List<Book> getByTitle(@PathVariable String title) {
 			return this.service.findByTitle(title);
 		}
 //		to find a book from the reading list using AUTHOR
 		@GetMapping("/getBookByAuthor/{author}")
-		public Book getByAuthor(@PathVariable String author) {
+		public List<Book> getByAuthor(@PathVariable String author) {
 			return this.service.findByAuthor(author);
 		}
+		
 		
 //		to find all books from the reading list
 		@GetMapping("/getBooks")
