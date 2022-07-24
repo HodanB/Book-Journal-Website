@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+
 import com.example.demo.entity.Book;
 import com.example.demo.repo.BookRepo;
 
@@ -65,7 +66,7 @@ public class BookServiceDB implements BookService {
 
 	@Override
 	public List<Book> findByAuthor(String author) {
-		// TODO Auto-generated method stub
+	
 		return this.repo.findByAuthorStartingWithIgnoreCase(author);
 	}
 }

@@ -48,7 +48,6 @@ public class BookController {
 			return this.service.findByAuthor(author);
 		}
 		
-		
 //		to find all books from the reading list
 		@GetMapping("/getBooks")
 		public List<Book> getAll() {
