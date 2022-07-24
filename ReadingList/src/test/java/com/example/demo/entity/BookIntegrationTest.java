@@ -1,10 +1,8 @@
 package com.example.demo.entity;
 
-//import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.jupiter.api.Test;
 
-import com.example.demo.entity.Book;
+
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 

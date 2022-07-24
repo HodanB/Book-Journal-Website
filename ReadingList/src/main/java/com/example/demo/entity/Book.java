@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import java.util.Objects;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +14,6 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //AI
 	private Integer id;
 	
-//	@Column(name = "bookTitle", nullable =  false, unique = true)
 	private String title;
 	private String author;
 	private String genre;
@@ -97,24 +96,24 @@ public class Book {
 	}
 
 
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(author, genre, id, pages, releaseYear, title);
-//	}
-//
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Book other = (Book) obj;
-//		return Objects.equals(author, other.author) && Objects.equals(genre, other.genre)
-//				&& Objects.equals(id, other.id) && pages == other.pages
-//				&& Objects.equals(releaseYear, other.releaseYear) && Objects.equals(title, other.title);
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(author, genre, id, pages, releaseYear, title);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		return Objects.equals(author, other.author) && Objects.equals(genre, other.genre)
+				&& Objects.equals(id, other.id) && pages == other.pages
+				&& Objects.equals(releaseYear, other.releaseYear) && Objects.equals(title, other.title);
+	}
 	
 	@Override
 	public String toString() {
@@ -123,3 +122,4 @@ public class Book {
 	}
 
 }
+
