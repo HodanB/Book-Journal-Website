@@ -7,6 +7,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
 
 const form = event.target;
+//const data
 const  book = {
 title: form.title.value,
 author: form.author.value,
@@ -14,6 +15,7 @@ genre: form.genre.value,
 pages: form.pages.value,
 releaseYear: form.releaseYear.value,
 }
+
 
 
 axios.post("http://localhost:8080/createBook", book)
@@ -75,7 +77,20 @@ function renderBooks() {
                     
                 });
                 bookDiv.appendChild(bookUpdate);
+                output.appendChild(bookCol);
 
+                // output.appendChild(bookCol);
+                // const bookUpdate = document.createElement("button");
+                // bookUpdate.innerText = "Update";
+                // bookUpdate.classList.add("btn btn-outline-success");
+                // bookUpdate.addEventListener("click", () => {
+                //     console.log("BOOK:", book);
+                //     updateBook(book.id);
+                    
+                // });
+                // bookDiv.appendChild(bookUpdate);
+                // output.appendChild(bookCol);
+                
 
                 
             const bookDelete = document.createElement("button");
