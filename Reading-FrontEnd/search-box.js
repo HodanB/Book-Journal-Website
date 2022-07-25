@@ -8,7 +8,9 @@ searchBar.addEventListener('keyup', (e) => {
     const filteredBooks = hpBooks.filter((book) => {
         return (
             book.title.toLowerCase().includes(searchString) ||
-            book.author.toLowerCase().includes(searchString)
+            book.author.toLowerCase().includes(searchString) ||
+            book.genre.toLowerCase().includes(searchString )
+            
         );
     });
     displayBooks(filteredBooks);
@@ -29,6 +31,7 @@ const displayBooks = (books) => {
             <li class="book">
                 <h2>${book.title}</h2>
                 <p>Author: ${book.author}</p>
+                <p>Genre: ${book.genre}</p>
             </li>
         `;
         })
