@@ -120,7 +120,6 @@ function deleteBook(id) {
             .catch(err => console.error(err));
         }
 const updateBook= (id) => {
-    console.log("title"+ this.title.value);
     axios.patch("http://localhost:8080/updateBook/" + id + "?title=" + this.title.value + "&author=" + this.author.value + "&genre=" + this.genre.value
         + "&pages=" + this.pages.value + "&releaseYear=" + this.releaseYear.value )
             .then(res => {

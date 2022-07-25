@@ -98,7 +98,7 @@ public class Book {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(author, genre, id, pages, releaseYear, title);
+		return Objects.hash(author, genre, pages, releaseYear, title);
 	}
 
 	@Override
@@ -111,7 +111,7 @@ public class Book {
 			return false;
 		Book other = (Book) obj;
 		return Objects.equals(author, other.author) && Objects.equals(genre, other.genre)
-				&& Objects.equals(id, other.id) && pages == other.pages
+				 && pages == other.pages
 				&& Objects.equals(releaseYear, other.releaseYear) && Objects.equals(title, other.title);
 	}
 	
