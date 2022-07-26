@@ -67,9 +67,29 @@ public class BookController {
 		@PatchMapping("/updateBook/{id}")
 		public Book update(@PathVariable("id") int id, @PathParam("title") String title,
 				@PathParam("author") String author, @PathParam("genre") String genre, 
-				@PathParam("pages") Integer pages, @PathParam("releaseYear") String releaseYear) {
-			return this.service.update(id, title, author, genre, pages, releaseYear);
+				@PathParam("pages") Integer pages, @PathParam("releaseYear") String releaseYear)
+		{
+			Book existing = getById(id);
+
+	        if (existing != null) {
+
+	            if ("".equals(title)) {
+	                title = existing.getTitle();
+	            }
+	            if ("".equals(author)) {
+	                author = existing.getAuthor();
+	            }
+	            if ("".equals(genre)) {
+	                genre = existing.getGenre();
+	            }
+	            if ("".equals(releaseYear)) {
+	            	releaseYear = existing.getReleaseYear();
+		        }
+	        }
+	        return this.service.update(id, title, author, genre, pages, releaseYear);
 		}
+		
+		
 //		to delete a book from the reading list
 			@DeleteMapping("/removeBook/{id}")
 			public ResponseEntity<?> delete(@PathVariable int id) {
