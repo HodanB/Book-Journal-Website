@@ -10,7 +10,11 @@
     background-color: #dbf4ef;
 
 }
-body
+h1{
+    text-align: center;
+
+
+}
 
 .row {
     list-style-type: none;
