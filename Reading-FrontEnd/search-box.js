@@ -11,6 +11,7 @@ searchBar.addEventListener('keyup', (e) => {
             book.author.toLowerCase().includes(searchString) ||
             book.genre.toLowerCase().includes(searchString )
             
+            
         );
     });
     displayBooks(filteredBooks);
