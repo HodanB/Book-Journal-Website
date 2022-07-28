@@ -79,7 +79,18 @@ function renderBooks() {
                 bookDiv.appendChild(bookUpdate);
                 output.appendChild(bookCol);
 
-                          
+                // output.appendChild(bookCol);
+                // const bookUpdate = document.createElement("button");
+                // bookUpdate.innerText = "Update";
+                // bookUpdate.classList.add("btn btn-outline-success");
+                // bookUpdate.addEventListener("click", () => {
+                //     console.log("BOOK:", book);
+                //     updateBook(book.id);
+                    
+                // });
+                // bookDiv.appendChild(bookUpdate);
+                // output.appendChild(bookCol);
+                
 
                 
             const bookDelete = document.createElement("button");
@@ -109,7 +120,6 @@ function deleteBook(id) {
             .catch(err => console.error(err));
         }
 const updateBook= (id) => {
-    console.log("title"+ this.title.value);
     axios.patch("http://localhost:8080/updateBook/" + id + "?title=" + this.title.value + "&author=" + this.author.value + "&genre=" + this.genre.value
         + "&pages=" + this.pages.value + "&releaseYear=" + this.releaseYear.value )
             .then(res => {
