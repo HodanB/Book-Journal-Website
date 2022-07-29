@@ -1,6 +1,6 @@
 Coverage: 95.5%
 
-#Reading List Application
+# Reading List Application
 
 A user friendly OOP-based application with CRUD (Create, Read , Update and Delete) funtinality through a front end website.
 
