@@ -9,7 +9,8 @@ searchBar.addEventListener('keyup', (e) => {
         return (
             book.title.toLowerCase().includes(searchString) ||
             book.author.toLowerCase().includes(searchString) ||
-            book.genre.toLowerCase().includes(searchString )
+            book.genre.toLowerCase().includes(searchString )||
+            book.releaseYear.toLowerCase().includes(searchString )
             
         );
     });
@@ -30,8 +31,7 @@ const displayBooks = (books) => {
             return `
             <li class="book">
                 <h2>${book.title}</h2>
-                <p>Author: ${book.author}</p>
-                <p>Genre: ${book.genre}</p>
+                <p>Author: ${book.author} (Genre: ${book.genre}, Pages: ${book.pages}, Release year: ${book.releaseYear})</p>
             </li>
         `;
         })
