@@ -39,9 +39,6 @@ A building Tool / Manages dependencies
 A Backend Application:
 [SpringBoot] - https://spring.io/tools
 
-Testing HTTP Requests:
-[Postman] - https://www.postman.com/downloads/
-
 A Remote Database:
 
 [H2 Console]- http://localhost:8080/h2-console/
@@ -55,7 +52,10 @@ CSS/Bootstrap - https://getbootstrap.com/
 The coding Functionality for Front-End:
 JavaScript
 
-Installing Postman
+Testing HTTP Requests:
+[Postman] - https://www.postman.com/downloads/
+
+## Installing Postman:
 Download Postman from this link - https://www.postman.com/downloads/
 
 ![image](https://user-images.githubusercontent.com/105277444/181766013-a57eaf12-0c95-4750-8283-22bfc0b32e1a.png)
