@@ -4,10 +4,10 @@ Coverage: 95.5%
 
 A user friendly OOP-based application with CRUD (Create, Read , Update and Delete) funtinality through a front end website.
 
-​Getting Started:
+## Getting Started:
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-Prerequisites:
+### Prerequisites:
 The most recent version of Git Bash; which can be downloaded here:
 
 [GIT Download] (https://git-scm.com/downloads)
@@ -56,14 +56,14 @@ The coding Functionality for Front-End:
 JavaScript
 
 
-Written In:
+## Written In:
 
 Java
 HTML
 JavaScript
 CSS
 
-Installing and Deployment:
+## Installing and Deployment:
 
 A step-by-step guide on executing the programme:
 
@@ -76,11 +76,11 @@ A step-by-step guide on executing the programme:
 6) Go to the create page, to enter your book details in order to create,read update and delete.
 
 
-Unit Tests:
+## Unit Tests:
 
 Describe the procedure for running the system's automated tests. List the tests and what each one does.
 
-Tests
+### Tests:
 
 JUNIT was used to make sure the CRUD techniques were operating properly, tests with a coverage of 95.5 percent were conducted.
 
@@ -88,14 +88,14 @@ MockMvc Was used to unsure HTTP replies were being received, along with the corr
 
 Postman was used to manually test the CRUD functionality and database connection.
 
-Built With:
+## Built With:
 
 Maven - Dependency Management
 spring - Back-end development
 
 
-Versioning
+## Versioning:
 We use GitHub for versioning.
 
-Jira Board
+## Jira Board:
 https://hodan-qa.atlassian.net/jira/software/projects/HB/boards/1 
